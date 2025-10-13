@@ -6,9 +6,15 @@ CREATE TABLE Authors(
   author_id INT PRIMARY KEY,
   author_name VARCHAR(215)
   );
+CREATE TABLE Customers(
+  customer_id INT PRIMARY KEY,
+  customer_name VARCHAR(215),
+  email VARCHAR(215),
+  address TEXT
+  );
 
 CREATE TABLE Books (
-  Book_id INT PRIMARY KEY,
+  book_id INT PRIMARY KEY,
   title  VARCHAR(130),
   author_id INT,
   price DOUBLE,
